@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Team 11-3</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+		
+		<style>
+		*{font-family: 'Gowun Batang', serif;}
+		
+		body {
+		margin: 0;
+		padding: 0;
+		}
+
+		img {
+		width: 500px;
+		height: 550px;
+		}
+		
+		#title
+		{
+		text-align: center;
+		}
+		
+		#menu {
+		padding: 14px 0;
+		text-align: right;
+		}
+		
+		#menu a {
+		color: black;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+
+		#menu a:hover {
+		background-color: black;
+		color: white;
+		}
+		 
+		#left {
+		border: 2px;
+		margin-left: 100px;
+		margin-right: 50px;
+		height: 100%;
+		width: 500px;
+		float: left;
+		}
+		
+		#right {
+		border: 2px;
+		width: 1000px;
+		height: 1000px;
+		overflow: auto;
+		text-align: center;
+		}
+ 
+		#right::-webkit-scrollbar {
+		display: none;
+		}
+		
+		div.Size {
+        display: none;
+        }
+		
+		div.Information {
+        display: none;
+        }
+
+		input:checked + div.Size {
+        display: block;
+        }
+		
+		input:checked + div.Information {
+        display: block;
+        }
+		
+		#Bottom
+		{
+		font-style: italic;
+		font-size: 15px;
+		text-align: right;	
+		}
+		
+		#Bottom a {
+		color: gray;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+		
+		#Bottom a:hover {
+		color: black;
+		}
+		
+		</style>
+		
+		<script>
+		var Window = null;
+		function win_open() {
+			if (Window == null) {
+			Window = window.open("Team 11-4.html");
+			}
+		}
+</script>
+
+	</head>
+
+	<body>
+	<div id="title">
+			<h1>Nike</h1>
+	</div>
+	<div id="menu">
+			<a href="Team 11.html">BACK TO MAIN</a>
+			<a href="Team 11-2-4.html">BACK TO ABOUT</a>
+	</div>
+	
+	<div>
+		<!-- 메인 왼쪽 : 베스트셀러 제품 사진 / 소개 (가격, 사이즈, 컬러 등) / 구매하기 -->
+		<div id="left">
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210914_70%2F1631575028840dwT2x_JPEG%2F39039661952913941_1233981847.jpg&type=a340" width="500" height="500" >
+			<p style="text-align:center; font-size: 20px;">나이키 스포츠웨어 클럽</p>
+			<p style="text-align:center; font-size: 20px;">₩35,000</p>
+			<br>
+			<br>
+			<form>
+			
+			색상   :
+			<select name="color">
+			<option selected>----------</option>
+			<option>Black</option>
+			<option>Flight Green</option>
+			<option>Coral</option>
+			<option>Olive</option>
+			<option>Atmosphere</option>
+			<option>Blush</option>
+			<option>Neutral</option>
+			<option>Light Sand/Black</option>
+			<option>White/Black</option>
+			<option>Black/Atmosphere</option>
+			<option>Gray/Off White</option>
+			<option>BASIL</option>
+			<option>LIGHT SIENNA</option>
+			<option>MOCCA</option>
+			<option>Orchid</option>
+			<option>Airforce blue</option>
+			</select>
+		
+			<br>
+			<br>
+			사이즈 :
+			<select name="size">
+			<option selected>----------</option>
+			<option>XS</option>
+			<option>S</option>
+			<option>M</option>
+			<option>L</option>
+			<option>XL</option>
+			<option>XXL</option>
+			</select>
+		
+			<br>
+			<br>
+			
+			<input type="button" value="구매하기" onclick="win_open()">
+			</form>
+			
+			<br>
+			<br>
+			<br>
+			
+			Size:<input type="checkbox">
+			<div class="Size">
+			XS : 가슴둘레 81.5~86.5 / 허리둘레 69.5~74.5 / 엉덩이둘레 83.5~88.5<br>
+			S : 가슴둘레 86.5~91.5 / 허리둘레 74.5~79.5 / 엉덩이둘레 88.5~93.5<br>
+			M : 가슴둘레 91.5~97 / 허리둘레 79.5~85 / 엉덩이둘레 93.5~98.5<br>
+			L : 가슴둘레 97~103 / 허리둘레 85~91 / 엉덩이둘레 98.5~103.5<br>
+			XL : 가슴둘레 103~109 / 허리둘레 91~97 / 엉덩이둘레 103.5~108.5<br>
+			XXL : 가슴둘레 109~115 / 허리둘레 97~103 / 엉덩이둘레 108.5~113.5<br></div><br>
+			
+			Information:<input type="checkbox">
+			<div class="Information">
+			나이키 웨어 클럽 티셔츠는 부드러운 면 소재로<br>
+			제작되었으며, 가슴 부분에 수놓인 클래식 로고가 돋보입니다.<br>
+			</div>
+		</div>
+		
+		<!-- 메인 오른쪽 : 착샷들 -->
+		<div id="right">
+			<img src="https://search.pstatic.net/sunny/?src=http%3A%2F%2Fgi.esmplus.com%2Ftradelane%2F20210415%2Fstussy%2520Stock%2520Low%2520Pro%2520Cap%2F010%2F1.jpg&type=a340">
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20150922_20%2Fkiyoharu01_1442916863021LVlzS_JPEG%2F331127_BLAC_1.jpg&type=a340">
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210907_182%2F1630980829636CV3QT_JPEG%2F32116609339919889_860897185.jpg&type=a340">
+			<img src="https://search.pstatic.net/sunny/?src=http%3A%2F%2Fgi.esmplus.com%2Ftradelane%2F20210415%2Fstussy%2520Stock%2520Low%2520Pro%2520Cap%2F011%2F4.jpg&type=a340">
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MDdfNzAg%2FMDAxNjMwOTkxOTgyMTkx.VaRZaPrS4qwwpppAluBOlyKwecz02jSCC5iteHwZfgAg.u3Z8gqoyOcAVqxthH6mOydlkEe-65G8IckOV7YT1f4Qg.JPEG.geniecompany%2F4.jpg&type=a340">
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MDdfMjcw%2FMDAxNjMwOTkyMTExODgx.XrJTx3rlEACAmahM8KwULgOuvB3nPfZk4WnMLbIglgcg.7GrbXbQ7Vg-fb0nTGDlF7fLiUYQekJtavUXEFUzh7k8g.JPEG.geniecompany%2F8.jpg&type=a340">
+		</div>
+	</div>
+	
+	<div id="Bottom">
+		<br>
+		<a href="https://www.instagram.com/gachon_university/" target=“_blank”>instagram @gachon_university</a><br>
+		<a href="https://www.instagram.com/gachon_aisw/" target=“_blank”>instagram @gachon_aisw</a><br>
+		<a href="https://www.gachon.ac.kr/kor/index.do" target=“_blank”>가천대학교 공식 홈페이지</a><br>
+		<a href="https://cafe.naver.com/gachon2010" target=“_blank”>AI & 소프트웨어학부 공식 카페</a><br>
+    </div>
+	
+	</body>
+</html>

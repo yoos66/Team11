@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Team 11-3</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+		
+		<style>
+		*{font-family: 'Gowun Batang', serif;}
+		
+		body {
+		margin: 0;
+		padding: 0;
+		}
+
+		img {
+		width: 500px;
+		height: 550px;
+		}
+		
+		#title
+		{
+		text-align: center;
+		}
+		
+		#menu {
+		padding: 14px 0;
+		text-align: right;
+		}
+		
+		#menu a {
+		color: black;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+
+		#menu a:hover {
+		background-color: black;
+		color: white;
+		}
+		 
+		#left {
+		border: 2px;
+		margin-left: 100px;
+		margin-right: 50px;
+		height: 100%;
+		width: 500px;
+		float: left;
+		}
+		
+		#right {
+		border: 2px;
+		width: 1000px;
+		height: 1000px;
+		overflow: auto;
+		text-align: center;
+		}
+ 
+		#right::-webkit-scrollbar {
+		display: none;
+		}
+		
+		div.Size {
+        display: none;
+        }
+		
+		div.Information {
+        display: none;
+        }
+
+		input:checked + div.Size {
+        display: block;
+        }
+		
+		input:checked + div.Information {
+        display: block;
+        }
+		
+		#Bottom
+		{
+		font-style: italic;
+		font-size: 15px;
+		text-align: right;	
+		}
+		
+		#Bottom a {
+		color: gray;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+		
+		#Bottom a:hover {
+		color: black;
+		}
+		
+		</style>
+		
+		<script>
+		var Window = null;
+		function win_open() {
+			if (Window == null) {
+			Window = window.open("Team 11-4.html");
+			}
+		}
+</script>
+
+	</head>
+
+	<body>
+	<div id="title">
+			<h1>Louisvuitton</h1>
+	</div>
+	<div id="menu">
+			<a href="Team 11.html">BACK TO MAIN</a>
+			<a href="Team 11-2-7.html">BACK TO ABOUT</a>
+	</div>
+	
+	<div>
+		<!-- 메인 왼쪽 : 베스트셀러 제품 사진 / 소개 (가격, 사이즈, 컬러 등) / 구매하기 -->
+		<div id="left">
+			<img src="https://kr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/%EB%A3%A8%EC%9D%B4-%EB%B9%84%ED%86%B5-%EB%A7%88%EC%9D%B4%EB%9D%BD%EB%AF%B8-%EC%B2%B4%EC%9D%B8-%ED%8F%AC%EC%89%90%ED%8A%B8-%EB%9D%BD%EB%AF%B8-%EC%A7%80%EA%B0%91-%EA%B0%80%EC%A3%BD%EC%86%8C%ED%92%88--M80673_PM2_Front%20view.png?wid=1240&hei=1240" width="500" height="500" >
+			<p style="text-align:center; font-size: 20px;">마이락미 체인 포쉐트</p>
+			<p style="text-align:center; font-size: 20px;">₩2,340,000</p>
+			<br>
+			<br>
+			<form>
+			
+			색상   :
+			<select name="color">
+			<option selected>----------</option>
+			<option>느와</option>
+			<option>리 드 방</option>
+			<option>GREIGE</option>
+			<option>CHATAIGNE</option>
+			</select>
+		
+			<br>
+			<br>
+			사이즈 :
+			<select name="size">
+			<option selected>----------</option>
+			</select>
+		
+			<br>
+			<br>
+			
+			<input type="button" value="구매하기" onclick="win_open()">
+			</form>
+			
+			<br>
+			<br>
+			<br>
+			
+			Size:<input type="checkbox">
+			<div class="Size">
+			----------</div><br>
+			
+			Information:<input type="checkbox">
+			<div class="Information">
+			스마트폰과 다양한 필수품을 휴대할 수 있는 스타일리시한 마이락미 체인 포쉐트.<br>
+			부드러운 송아지 가죽 소재. 엔벨로프 스타일 플랩, 앞면 포켓, LV 이니셜 클래스프 등<br>
+			락미 라인의 주요 시그니처를 재현한 파우치. 긴 체인을 활용해 숄더 백 또는 크로스 바디 백으로 연출 가능한 아이템.
+			</div>
+		</div>
+		
+		<!-- 메인 오른쪽 : 착샷들 -->
+		<div id="right">
+			<img src="https://kr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/%EB%A3%A8%EC%9D%B4-%EB%B9%84%ED%86%B5-%EB%A7%88%EC%9D%B4%EB%9D%BD%EB%AF%B8-%EC%B2%B4%EC%9D%B8-%ED%8F%AC%EC%89%90%ED%8A%B8-%EB%9D%BD%EB%AF%B8-%EC%A7%80%EA%B0%91-%EA%B0%80%EC%A3%BD%EC%86%8C%ED%92%88--M80673_PM1_Side%20view.png?wid=656&hei=656">
+			<img src="https://kr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/%EB%A3%A8%EC%9D%B4-%EB%B9%84%ED%86%B5-%EB%A7%88%EC%9D%B4%EB%9D%BD%EB%AF%B8-%EC%B2%B4%EC%9D%B8-%ED%8F%AC%EC%89%90%ED%8A%B8-%EB%9D%BD%EB%AF%B8-%EC%A7%80%EA%B0%91-%EA%B0%80%EC%A3%BD%EC%86%8C%ED%92%88--M80673_PM1_Interior%20view.png?wid=1080">
+			<img src="https://kr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/%EB%A3%A8%EC%9D%B4-%EB%B9%84%ED%86%B5-%EB%A7%88%EC%9D%B4%EB%9D%BD%EB%AF%B8-%EC%B2%B4%EC%9D%B8-%ED%8F%AC%EC%89%90%ED%8A%B8-%EB%9D%BD%EB%AF%B8-%EC%A7%80%EA%B0%91-%EA%B0%80%EC%A3%BD%EC%86%8C%ED%92%88--M80673_PM1_Detail%20view.png?wid=1080">
+			<img src="https://kr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/%EB%A3%A8%EC%9D%B4-%EB%B9%84%ED%86%B5-%EB%A7%88%EC%9D%B4%EB%9D%BD%EB%AF%B8-%EC%B2%B4%EC%9D%B8-%ED%8F%AC%EC%89%90%ED%8A%B8-%EB%9D%BD%EB%AF%B8-%EC%A7%80%EA%B0%91-%EA%B0%80%EC%A3%BD%EC%86%8C%ED%92%88--M80673_PM1_Closeup%20view.png?wid=1080">
+		</div>
+	</div>
+	
+	<div id="Bottom">
+		<br>
+		<a href="https://www.instagram.com/gachon_university/" target=“_blank”>instagram @gachon_university</a><br>
+		<a href="https://www.instagram.com/gachon_aisw/" target=“_blank”>instagram @gachon_aisw</a><br>
+		<a href="https://www.gachon.ac.kr/kor/index.do" target=“_blank”>가천대학교 공식 홈페이지</a><br>
+		<a href="https://cafe.naver.com/gachon2010" target=“_blank”>AI & 소프트웨어학부 공식 카페</a><br>
+    </div>
+	
+	</body>
+</html>

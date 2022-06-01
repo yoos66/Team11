@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Team 11-3</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+		
+		<style>
+		*{font-family: 'Gowun Batang', serif;}
+		
+		body {
+		margin: 0;
+		padding: 0;
+		}
+
+		img {
+		width: 500px;
+		height: 550px;
+		}
+		
+		#title
+		{
+		text-align: center;
+		}
+		
+		#menu {
+		padding: 14px 0;
+		text-align: right;
+		}
+		
+		#menu a {
+		color: black;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+
+		#menu a:hover {
+		background-color: black;
+		color: white;
+		}
+		 
+		#left {
+		border: 2px;
+		margin-left: 100px;
+		margin-right: 50px;
+		height: 100%;
+		width: 500px;
+		float: left;
+		}
+		
+		#right {
+		border: 2px;
+		width: 1000px;
+		height: 1000px;
+		overflow: auto;
+		text-align: center;
+		}
+ 
+		#right::-webkit-scrollbar {
+		display: none;
+		}
+		
+		div.Size {
+        display: none;
+        }
+		
+		div.Information {
+        display: none;
+        }
+
+		input:checked + div.Size {
+        display: block;
+        }
+		
+		input:checked + div.Information {
+        display: block;
+        }
+		
+		#Bottom
+		{
+		font-style: italic;
+		font-size: 15px;
+		text-align: right;	
+		}
+		
+		#Bottom a {
+		color: gray;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+		
+		#Bottom a:hover {
+		color: black;
+		}
+		
+		</style>
+		
+		<script>
+		var Window = null;
+		function win_open() {
+			if (Window == null) {
+			Window = window.open("Team 11-4.html");
+			}
+		}
+</script>
+
+	</head>
+
+	<body>
+	<div id="title">
+			<h1>Uniqlo</h1>
+	</div>
+	<div id="menu">
+			<a href="Team 11.html">BACK TO MAIN</a>
+			<a href="Team 11-2-1.html">BACK TO ABOUT</a>
+	</div>
+	
+	<div>
+		<!-- 메인 왼쪽 : 베스트셀러 제품 사진 / 소개 (가격, 사이즈, 컬러 등) / 구매하기 -->
+		<div id="left">
+			<img src="https://simage-kr.uniqlo.com/goods/31/14/40/53/450507_COL_COL32_1000.jpg" width="500" height="500" >
+			<p style="text-align:center; font-size: 20px;">엑스트라화인메리노크루넥스웨터(5부)</p>
+			<p style="text-align:center; font-size: 20px;">29,900원</p>
+			<br>
+			<br>
+			<form>
+			
+			색상   :
+			<select name="color">
+			<option selected>----------</option>
+			<option>01 OFF WHITE</option>
+			<option>09 BLACK</option>
+			<option>15 RED</option>
+			<option>32 BEIGE</option>
+			<option>69 NAVY</option>
+			</select>
+		
+			<br>
+			<br>
+			사이즈 :
+			<select name="size">
+			<option selected>----------</option>
+			<option>XS</option>
+			<option>S</option>
+			<option>M</option>
+			<option>L</option>
+			<option>XL</option>
+			<option>XXL</option>
+			<option>3XL</option>
+			</select>
+		
+			<br>
+			<br>
+			
+			<input type="button" value="구매하기" onclick="win_open()">
+			</form>
+			
+			<br>
+			<br>
+			<br>
+			
+			Size:<input type="checkbox">
+			<div class="Size">
+			XS - 전체길이A 52.5 / 어깨너비 33 / 가슴너비 39 / 전체팔길이 40<br>
+			S - 전체길이A 54 / 어깨너비 34 / 가슴너비 41.5 / 전체팔길이 41<br>
+			M - 전체길이A 56 / 어깨너비 35 / 가슴너비 44 / 전체팔길이 42<br>
+			L - 전체길이A 58 / 어깨너비 36.5 / 가슴너비 47 / 전체팔길이 43.5<br>
+			XL - 전체길이A 60 / 어깨너비 38 / 가슴너비 50 / 전체팔길이 45<br>
+			XXL - 전체길이A 62.5 / 어깨너비 39.5 / 가슴너비 53 / 전체팔길이 46.5<br>
+			3XL - 전체길이A 63 / 어깨너비 41 / 가슴너비 56 / 전체팔길이 48</div><br>
+			
+			Information:<input type="checkbox">
+			<div class="Information">부드러우면서도 아름다운 인상을 주는 엑스트라 화인 메리노 크루넥 스웨터.<br>
+			·소매, 밑단의 탄탄한 소재감이 특징인 아이템.<br>
+			·5부 기장.<br>
+			·세탁기로 간편히 세탁이 가능한 머신워셔블 기능.(물세탁, 세탁기 사용 가능)
+			100% Cotton - Imported.</div>
+		</div>
+		
+		<!-- 메인 오른쪽 : 착샷들 -->
+		<div id="right">
+			<img src="https://simage-kr.uniqlo.com/goods/31/14/40/53/450507_14_1000.jpg">
+			<img src="https://simage-kr.uniqlo.com/goods/31/14/40/53/450507_17_1000.jpg">
+			<img src="https://simage-kr.uniqlo.com/goods/31/14/40/53/450507_18_1000.jpg">
+			<img src="https://simage-kr.uniqlo.com/goods/31/14/40/53/450507_23_1000.jpg">
+			</div>
+	</div>
+	
+	<div id="Bottom">
+		<br>
+		<a href="https://www.instagram.com/gachon_university/" target=“_blank”>instagram @gachon_university</a><br>
+		<a href="https://www.instagram.com/gachon_aisw/" target=“_blank”>instagram @gachon_aisw</a><br>
+		<a href="https://www.gachon.ac.kr/kor/index.do" target=“_blank”>가천대학교 공식 홈페이지</a><br>
+		<a href="https://cafe.naver.com/gachon2010" target=“_blank”>AI & 소프트웨어학부 공식 카페</a><br>
+    </div>
+	
+	</body>
+</html>

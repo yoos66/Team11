@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Team 11-3</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+		
+		<style>
+		*{font-family: 'Gowun Batang', serif;}
+		
+		body {
+		margin: 0;
+		padding: 0;
+		}
+
+		img {
+		width: 500px;
+		height: 550px;
+		}
+		
+		#title
+		{
+		text-align: center;
+		}
+		
+		#menu {
+		padding: 14px 0;
+		text-align: right;
+		}
+		
+		#menu a {
+		color: black;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+
+		#menu a:hover {
+		background-color: black;
+		color: white;
+		}
+		 
+		#left {
+		border: 2px;
+		margin-left: 100px;
+		margin-right: 50px;
+		height: 100%;
+		width: 500px;
+		float: left;
+		}
+		
+		#right {
+		border: 2px;
+		width: 1000px;
+		height: 1000px;
+		overflow: auto;
+		text-align: center;
+		}
+ 
+		#right::-webkit-scrollbar {
+		display: none;
+		}
+		
+		div.Size {
+        display: none;
+        }
+		
+		div.Information {
+        display: none;
+        }
+
+		input:checked + div.Size {
+        display: block;
+        }
+		
+		input:checked + div.Information {
+        display: block;
+        }
+		
+		#Bottom
+		{
+		font-style: italic;
+		font-size: 15px;
+		text-align: right;	
+		}
+		
+		#Bottom a {
+		color: gray;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+		
+		#Bottom a:hover {
+		color: black;
+		}
+		
+		</style>
+		
+		<script>
+		var Window = null;
+		function win_open() {
+			if (Window == null) {
+			Window = window.open("Team 11-4.html");
+			}
+		}
+</script>
+
+	</head>
+
+	<body>
+	<div id="title">
+			<h1>Nike</h1>
+	</div>
+	<div id="menu">
+			<a href="Team 11.html">BACK TO MAIN</a>
+			<a href="Team 11-2-4.html">BACK TO ABOUT</a>
+	</div>
+	
+	<div>
+		<!-- 메인 왼쪽 : 베스트셀러 제품 사진 / 소개 (가격, 사이즈, 컬러 등) / 구매하기 -->
+		<div id="left">
+			<img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_2232230%2F22322303048.1.jpg&type=f372_372" width="500" height="500" >
+			<p style="text-align:center; font-size: 20px;">나이키 스포츠웨어 헤리티지86 퓨추라</p>
+			<p style="text-align:center; font-size: 20px;">₩29,000</p>
+			<br>
+			<br>
+			<form>
+			
+			색상   :
+			<select name="color">
+			<option selected>----------</option>
+			<option>블랙/블랙/화이트</option>
+			<option>라이트본/라이트본/블랙</option>
+			<option>화이트/화이트/블랙</option>
+			<option>다크 드리프트우드/다크 드리프트우드/화이트</option>
+			<option>러프그린/러프그린/화이트</option>
+			<option>라이트 마린</option>
+			</select>
+		
+			<br>
+			<br>
+			사이즈 :
+			<select name="size">
+			<option selected>----------</option>
+			<option>Free</option>
+			</select>
+		
+			<br>
+			<br>
+			
+			<input type="button" value="구매하기" onclick="win_open()">
+			</form>
+			
+			<br>
+			<br>
+			<br>
+			
+			Size:<input type="checkbox">
+			<div class="Size">
+			----------</div><br>
+			
+			Information:<input type="checkbox">
+			<div class="Information">
+			부드러운 소재로 제작된 나이키 스포츠웨어 헤리티지86 퓨추라<br>
+			워시드 모자는 클래식한 6패널 디자인으로 착용감이 편안하고,<br>
+			조절 가능한 클로저가 달려 맞춤 핏을 선사합니다<br></div>
+		</div>
+		
+		<!-- 메인 오른쪽 : 착샷들 -->
+		<div id="right">
+			<img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_2232230%2F22322303048.1.jpg&type=f372_372">
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMDJfMTUx%2FMDAxNjA2OTAyODI0Njg1.OVrMLXT11wS2Nzq7ZTBPlMkb0cMow_LVUeGyXkV3XJQg.aJMZwfAaRDEc_Ygx6tTAYC5Th5-yzZORL-5sH0Tw-hAg.JPEG.ese-ese-ese%2F8574C4B9-C324-45E0-BFA7-90877776217A.jpeg&type=a340">
+			<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMDJfMjI1%2FMDAxNjA2OTAyNDEzNjQ5.foDA_KvEUUdUD5Q7Srx0F8yybzN7eq6b_Xs3jdyrlZEg.GPtFqbnM5f8b1-eVQ_3nkGqQQMFGeGnyk_XJ8MCXHE0g.JPEG.ese-ese-ese%2FIMG_7310.JPG&type=a340">
+			<img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_3192692%2F31926923854.jpg&type=f372_372">
+			<img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fshopping-phinf.pstatic.net%2Fmain_1400879%2F14008795648.3.jpg&type=f372_372">
+		</div>
+	</div>
+	
+	<div id="Bottom">
+		<br>
+		<a href="https://www.instagram.com/gachon_university/" target=“_blank”>instagram @gachon_university</a><br>
+		<a href="https://www.instagram.com/gachon_aisw/" target=“_blank”>instagram @gachon_aisw</a><br>
+		<a href="https://www.gachon.ac.kr/kor/index.do" target=“_blank”>가천대학교 공식 홈페이지</a><br>
+		<a href="https://cafe.naver.com/gachon2010" target=“_blank”>AI & 소프트웨어학부 공식 카페</a><br>
+    </div>
+	
+	</body>
+</html>

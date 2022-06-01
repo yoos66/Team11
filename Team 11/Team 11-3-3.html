@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Team 11-3</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+		
+		<style>
+		*{font-family: 'Gowun Batang', serif;}
+		
+		body {
+		margin: 0;
+		padding: 0;
+		}
+
+		img {
+		width: 500px;
+		height: 550px;
+		}
+		
+		#title
+		{
+		text-align: center;
+		}
+		
+		#menu {
+		padding: 14px 0;
+		text-align: right;
+		}
+		
+		#menu a {
+		color: black;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+
+		#menu a:hover {
+		background-color: black;
+		color: white;
+		}
+		 
+		#left {
+		border: 2px;
+		margin-left: 100px;
+		margin-right: 50px;
+		height: 100%;
+		width: 500px;
+		float: left;
+		}
+		
+		#right {
+		border: 2px;
+		width: 1000px;
+		height: 1000px;
+		overflow: auto;
+		text-align: center;
+		}
+ 
+		#right::-webkit-scrollbar {
+		display: none;
+		}
+		
+		div.Size {
+        display: none;
+        }
+		
+		div.Information {
+        display: none;
+        }
+
+		input:checked + div.Size {
+        display: block;
+        }
+		
+		input:checked + div.Information {
+        display: block;
+        }
+		
+		#Bottom
+		{
+		font-style: italic;
+		font-size: 15px;
+		text-align: right;	
+		}
+		
+		#Bottom a {
+		color: gray;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+		
+		#Bottom a:hover {
+		color: black;
+		}
+		
+		</style>
+		
+		<script>
+		var Window = null;
+		function win_open() {
+			if (Window == null) {
+			Window = window.open("Team 11-4.html");
+			}
+		}
+</script>
+
+	</head>
+
+	<body>
+	<div id="title">
+			<h1>Stussy</h1>
+	</div>
+	<div id="menu">
+			<a href="Team 11.html">BACK TO MAIN</a>
+			<a href="Team 11-2-2.html">BACK TO ABOUT</a>
+	</div>
+	
+	<div>
+		<!-- 메인 왼쪽 : 베스트셀러 제품 사진 / 소개 (가격, 사이즈, 컬러 등) / 구매하기 -->
+		<div id="left">
+			<img src="https://cdn.shopify.com/s/files/1/0099/5708/1143/products/1904564W_WHI1_1_720x.jpg?v=1610050793" width="500" height="500" >
+			<p style="text-align:center; font-size: 20px;">STUSSY BASIC WHITE T-SHIRT</p>
+			<p style="text-align:center; font-size: 20px;">₩58,000</p>
+			<br>
+			<br>
+			<form>
+			
+			색상   :
+			<select name="color">
+			<option selected>----------</option>
+			<option>Black/White</option>
+			<option>Caramel/White</option>
+			<option>Lemon/Black</option>
+			<option>Navy/White</option>
+			<option>White/Black</option>
+			<option>Pink/White</option>
+			<option>Yellow/White</option>
+			<option>Slate/White</option>
+			<option>Navy FA20/White</option>
+			<option>Yellow/Black</option>
+			</select>
+		
+			<br>
+			<br>
+			사이즈 :
+			<select name="size">
+			<option selected>----------</option>
+			<option>S</option>
+			<option>M</option>
+			<option>L</option>
+			<option>XL</option>
+			<option>XXL</option>
+			</select>
+		
+			<br>
+			<br>
+			
+			<input type="button" value="구매하기" onclick="win_open()">
+			</form>
+			
+			<br>
+			<br>
+			<br>
+			
+			Size:<input type="checkbox">
+			<div class="Size">
+			S - chest 19 / length 28.5 / sleeve 8.5<br>
+			M - chest 21 / length 29.5 / sleeve 9<br>
+			L - chest 23 / length 30.5 / sleeve 9.5<br>
+			XL - chest 25 / length 31.5 / sleeve 10<br>
+			XXL - chest 27 / length 32.5 / sleeve 10</div><br>
+			
+			Information:<input type="checkbox">
+			<div class="Information">Short sleeve t-shirt - Screenprint<br>
+			100% Cotton - Imported.</div>
+		</div>
+		
+		<!-- 메인 오른쪽 : 착샷들 -->
+		<div id="right">
+			<img src="https://cdn.shopify.com/s/files/1/0099/5708/1143/products/1904564W_WHI1_1_720x.jpg?v=1610050793">
+			<img src="https://cdn.shopify.com/s/files/1/0099/5708/1143/products/1904564W_WHI1_2_720x.jpg?v=1610050794">
+			<img src="https://search.pstatic.net/sunny/?src=http%3A%2F%2Fimg.littlecow.co.kr%2Flink%2FMagicHubHosting.php%3FSurl%3Dhttps%253A%252F%252Fstatic.mltd.com%252Fimages%252Fproducts%252F1472854408_2K3A2828.jpg%26BrandID%3DStussy%26Pcode%3D1120084485%26SetWidth%3D800%26SetHeight%3D800%26type%3Djpg&type=a340">
+			<img src="https://search.pstatic.net/sunny/?src=http%3A%2F%2Fimg.littlecow.co.kr%2Flink%2FMagicHubHosting.php%3FSurl%3Dhttps%253A%252F%252Fstatic.mltd.com%252Fimages%252Fproducts%252F1472854408_2K3A2829.jpg%26BrandID%3DStussy%26Pcode%3D1120084485%26SetWidth%3D800%26SetHeight%3D800%26type%3Djpg&type=a340">
+			<img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fis4.revolveassets.com%2Fimages%2Fp4%2Fn%2Fd%2FSSSY-MS207_V1.jpg&type=a340">
+			<img src="https://search.pstatic.net/sunny/?src=http%3A%2F%2Fukmalltr2905.godomall.com%2Fcosmos%2Fd_10000019%2F1000001864%2Fdetail_5b7d7fcb61de0.jpg&type=a340">
+			<img src="https://search.pstatic.net/sunny/?src=http%3A%2F%2Fukmalltr2905.godomall.com%2Fcosmos%2Fd_10000019%2F1000001864%2FimgDesc%2Fdesc_5b7d7fd2b3718.jpg&type=a340">
+		</div>
+	</div>
+	
+	<div id="Bottom">
+		<br>
+		<a href="https://www.instagram.com/gachon_university/" target=“_blank”>instagram @gachon_university</a><br>
+		<a href="https://www.instagram.com/gachon_aisw/" target=“_blank”>instagram @gachon_aisw</a><br>
+		<a href="https://www.gachon.ac.kr/kor/index.do" target=“_blank”>가천대학교 공식 홈페이지</a><br>
+		<a href="https://cafe.naver.com/gachon2010" target=“_blank”>AI & 소프트웨어학부 공식 카페</a><br>
+    </div>
+	
+	</body>
+</html>

@@ -1,0 +1,134 @@
+
+	body {
+	  margin: 0;
+	  padding: 0;
+	}
+
+	h2{
+		font-family:Impact;
+	}
+	h3{
+		font-family:Impact;
+	}
+		
+	#header {
+	  padding: 60px;
+	  text-align:center;
+	  font-family: Impact;
+	  font-size: 20px;
+	}
+
+	#navbar {
+	  background-color: #383838;
+	  padding: 14px 0;
+	}
+	#navbar a {
+	  color: white;
+	  padding: 14px 20px;
+	  text-decoration: none;
+	  text-align: center;
+	}
+	#navbar a:hover {
+	  background-color: #dddddd;
+	  color: black;
+	}
+
+	#features {
+		background: #353D40;
+		border-bottom: solid 1px #272e31;
+		padding: 45px 0 45px 0;
+		color: #a0a8ab;
+	}
+	
+	#product {
+	text-align: center;
+	}
+	 
+	.shirt{
+		padding-left:10px;
+		margin:40px;
+	}
+	
+	.cap{
+		margin:40px;
+	}
+		
+	.d_shirt{
+		float:left;
+		margin-left: 30px;
+	}
+
+	.fakeimg {
+	  clear: both;
+	  background-color: #aaaaaa;
+	  width: 100%;
+	  height: 300px;
+	}
+
+	.main {
+	  float: left;
+	  width: 60%;
+	  max-width: 60%;
+	  background-color: white;
+	  padding: 20px;
+	}
+
+
+
+	#about {
+	text-align: center;
+	float: left;
+	width: 30%;
+	max-width: 30%;
+	background-color: #f1f1f1;
+	padding: 20px;
+	margin-top:20px;
+	margin-left:55px;
+	height: 613px;
+	}
+	
+	#about a {
+	color: gray;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+	}
+		
+	#about a:hover {
+	color: black;
+	font-weight: bold;
+	}
+	
+	#Bottom
+	{
+	font-style: italic;
+	font-size: 15px;
+	text-align: right;	
+	clear: both;
+	}
+		
+	#Bottom a {
+	color: gray;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+	}
+		
+	#Bottom a:hover {
+	color: black;
+	}
+
+
+	@media (max-width: 700px) {
+	  #navbar a {
+		display: block;
+	  }
+	  .about {
+		clear: both;
+		width: 95%;
+	  }
+	  .main {
+		clear: both;
+		width: 95%;
+	  }
+	}

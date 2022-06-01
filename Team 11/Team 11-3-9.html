@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Team 11-3</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+		
+		<style>
+		*{font-family: 'Gowun Batang', serif;}
+		
+		body {
+		margin: 0;
+		padding: 0;
+		}
+
+		img {
+		width: 500px;
+		height: 550px;
+		}
+		
+		#title
+		{
+		text-align: center;
+		}
+		
+		#menu {
+		padding: 14px 0;
+		text-align: right;
+		}
+		
+		#menu a {
+		color: black;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+
+		#menu a:hover {
+		background-color: black;
+		color: white;
+		}
+		 
+		#left {
+		border: 2px;
+		margin-left: 100px;
+		margin-right: 50px;
+		height: 100%;
+		width: 500px;
+		float: left;
+		}
+		
+		#right {
+		border: 2px;
+		width: 1000px;
+		height: 1000px;
+		overflow: auto;
+		text-align: center;
+		}
+ 
+		#right::-webkit-scrollbar {
+		display: none;
+		}
+		
+		div.Size {
+        display: none;
+        }
+		
+		div.Information {
+        display: none;
+        }
+
+		input:checked + div.Size {
+        display: block;
+        }
+		
+		input:checked + div.Information {
+        display: block;
+        }
+		
+		#Bottom
+		{
+		font-style: italic;
+		font-size: 15px;
+		text-align: right;	
+		}
+		
+		#Bottom a {
+		color: gray;
+		padding: 14px 20px;
+		text-decoration: none;
+		text-align: center;
+		}
+		
+		#Bottom a:hover {
+		color: black;
+		}
+		
+		</style>
+		
+		<script>
+		var Window = null;
+		function win_open() {
+			if (Window == null) {
+			Window = window.open("Team 11-4.html");
+			}
+		}
+</script>
+
+	</head>
+
+	<body>
+	<div id="title">
+			<h1>Calvinklein</h1>
+	</div>
+	<div id="menu">
+			<a href="Team 11.html">BACK TO MAIN</a>
+			<a href="Team 11-2-5.html">BACK TO ABOUT</a>
+	</div>
+	
+	<div>
+		<!-- 메인 왼쪽 : 베스트셀러 제품 사진 / 소개 (가격, 사이즈, 컬러 등) / 구매하기 -->
+		<div id="left">
+			<img src="https://www.calvinklein.com/dw/image/v2/ABAD_PRD/on/demandware.static/-/Sites-calvinklein-hk-master/default/dw7527eb81/images/ckkr/J320770-BEH/J320770-BEH-ITEM-5.jpg?sw=730" width="500" height="500" >
+			<p style="text-align:center; font-size: 20px;">남성 레귤러핏 모노그램 엠브로이더리 로고 반팔 티셔츠</p>
+			<p style="text-align:center; font-size: 20px;">₩79,000</p>
+			<br>
+			<br>
+			<form>
+			
+			색상   :
+			<select name="color">
+			<option selected>----------</option>
+			<option>CK Black</option>
+			<option>BAYSHORE BLUE</option>
+			<option>RHUBARB RED</option>
+			<option>BRIGHT WHITE</option>
+			<option>EGGSHELL</option>
+			<option>BR WHT/BURNT OL</option>
+			</select>
+		
+			<br>
+			<br>
+			사이즈 :
+			<select name="size">
+			<option selected>----------</option>
+			<option>S</option>
+			<option>M</option>
+			<option>L</option>
+			<option>XL</option>
+			</select>
+		
+			<br>
+			<br>
+			
+			<input type="button" value="구매하기" onclick="win_open()">
+			</form>
+			
+			<br>
+			<br>
+			<br>
+			
+			Size:<input type="checkbox">
+			<div class="Size">
+			S : Chest 97 / Bottom Hem 97 / Short Sleeves 39<br>
+			M : Chest 102 / Bottom Hem 102 / Short Sleeves 41<br>
+			L : Chest 107 / Bottom Hem 107 / Short Sleeves 42<br>
+			XL : Chest 114 / Bottom Hem 114 / Short Sleeves 45</div><br>
+			
+			Information:<input type="checkbox">
+			<div class="Information">
+			면 소재의 레귤러 핏 반팔 티셔츠입니다. 자수로 표현된 클래식한 모노그램 로고가 포인트가 됩니다.<br>
+			• 면 소재<br>
+			• 레귤러 핏<br>
+			• 자수로 표현된 클래식한 모노그램 로고<br>
+			</div>
+		</div>
+		
+		<!-- 메인 오른쪽 : 착샷들 -->
+		<div id="right">
+			<img src="https://www.calvinklein.com/dw/image/v2/ABAD_PRD/on/demandware.static/-/Sites-calvinklein-hk-master/default/dwf9e7823b/images/ckkr/J320770-BEH/J320770-BEH-ITEM-1.jpg?sw=730">
+			<img src="https://www.calvinklein.com/dw/image/v2/ABAD_PRD/on/demandware.static/-/Sites-calvinklein-hk-master/default/dw3c3782f4/images/ckkr/J320770-BEH/J320770-BEH-ITEM-2.jpg?sw=730">
+			<img src="https://www.calvinklein.com/dw/image/v2/ABAD_PRD/on/demandware.static/-/Sites-calvinklein-hk-master/default/dw86501da9/images/ckkr/J320770-BEH/J320770-BEH-ITEM-3.jpg?sw=730">
+			<img src="https://www.calvinklein.com/dw/image/v2/ABAD_PRD/on/demandware.static/-/Sites-calvinklein-hk-master/default/dwbed1450e/images/ckkr/J320770-BEH/J320770-BEH-ITEM-4.jpg?sw=730">
+		</div>
+	</div>
+	
+	<div id="Bottom">
+		<br>
+		<a href="https://www.instagram.com/gachon_university/" target=“_blank”>instagram @gachon_university</a><br>
+		<a href="https://www.instagram.com/gachon_aisw/" target=“_blank”>instagram @gachon_aisw</a><br>
+		<a href="https://www.gachon.ac.kr/kor/index.do" target=“_blank”>가천대학교 공식 홈페이지</a><br>
+		<a href="https://cafe.naver.com/gachon2010" target=“_blank”>AI & 소프트웨어학부 공식 카페</a><br>
+    </div>
+	
+	</body>
+</html>
